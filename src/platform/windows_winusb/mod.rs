@@ -32,7 +32,7 @@ impl crate::error::Error {
         Self {
             kind,
             code: NonZeroU32::new(code as u32),
-            message,
+            message: message.into(),
         }
     }
 }
