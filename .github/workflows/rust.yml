@@ -3,8 +3,10 @@ name: Rust
 on:
   push:
     branches: [ "main" ]
+    paths-ignore: ["**/*.md", "**/*.rst", "docs/**", "LICENSE*"]
   pull_request:
     branches: [ "main" ]
+    paths-ignore: ["**/*.md", "**/*.rst", "docs/**", "LICENSE*"]
   workflow_call:
   workflow_dispatch:
 
@@ -13,6 +15,7 @@ permissions:
 
 env:
   CARGO_TERM_COLOR: always
+  CARGO_BUILD_JOBS: 2
 
 jobs:
   format:
@@ -36,9 +39,11 @@ jobs:
       uses: dtolnay/rust-toolchain@6bed0761d98439e5a578e2877258200ad565ba87
       with:
         toolchain: ${{ matrix.rust }}
-        override: true
-    - name: Build
-      run: cargo build --verbose
+    - name: Cache Cargo sources and tools
+      uses: Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6 # v2
+      with:
+        prefix-key: nusb-v1-sources
+        cache-targets: false
     - name: Run tests
       run: |
         cargo test --verbose
@@ -57,6 +62,11 @@ jobs:
       uses: dtolnay/rust-toolchain@6bed0761d98439e5a578e2877258200ad565ba87
       with:
         targets: ${{ matrix.target }}
+    - name: Cache Cargo sources and tools
+      uses: Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6 # v2
+      with:
+        prefix-key: nusb-v1-sources
+        cache-targets: false
     - name: check
       run: |
         cargo check --target ${{ matrix.target }}
@@ -69,6 +79,13 @@ jobs:
     steps:
     - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
     - name: Install toolchain
-      uses: dtolnay/rust-toolchain@nightly
+      uses: dtolnay/rust-toolchain@6bed0761d98439e5a578e2877258200ad565ba87
+      with:
+        toolchain: nightly
+    - name: Cache Cargo sources and tools
+      uses: Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6 # v2
+      with:
+        prefix-key: nusb-v1-sources
+        cache-targets: false
     - name: rustdoc
       run: RUSTDOCFLAGS=--cfg=docsrs cargo +nightly doc --all-features --no-deps
