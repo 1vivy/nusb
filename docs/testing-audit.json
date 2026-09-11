@@ -1,0 +1,546 @@
+{
+  "schemaVersion": 1,
+  "repository": "nusb",
+  "baselineCommit": "2d58dbc167a85c75c61462270cde903eca023c35",
+  "consumedRevision": "2d58dbc167a85c75c61462270cde903eca023c35",
+  "upstreamComparison": "bdc148c123c102785cd1d506b77bfeeb794ffeb1",
+  "counting": "Each declared test and explicit subcase is listed; Rustdoc snippets and manual qualification cases are identified separately. Target-gated tests remain listed even when they cannot run on this host. Data fixtures/support scripts and historical reports are not test cases.",
+  "entries": [
+    {
+      "source": {
+        "name": "test_empty",
+        "path": "src/descriptors.rs",
+        "line": 747
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "USB descriptor/platform decoding and public transport behavior: empty.",
+      "owner": "nusb",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_short",
+        "path": "src/descriptors.rs",
+        "line": 757
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "USB descriptor/platform decoding and public transport behavior: short.",
+      "owner": "nusb",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_invalid_total_len",
+        "path": "src/descriptors.rs",
+        "line": 767
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "USB descriptor/platform decoding and public transport behavior: invalid total len.",
+      "owner": "nusb",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_one_config",
+        "path": "src/descriptors.rs",
+        "line": 777
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "USB descriptor/platform decoding and public transport behavior: one config.",
+      "owner": "nusb",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_two_configs",
+        "path": "src/descriptors.rs",
+        "line": 794
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "USB descriptor/platform decoding and public transport behavior: two configs.",
+      "owner": "nusb",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_empty_config",
+        "path": "src/descriptors.rs",
+        "line": 810
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "USB descriptor/platform decoding and public transport behavior: empty config.",
+      "owner": "nusb",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_malformed",
+        "path": "src/descriptors.rs",
+        "line": 819
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "USB descriptor/platform decoding and public transport behavior: malformed.",
+      "owner": "nusb",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_linux_root_hub",
+        "path": "src/descriptors.rs",
+        "line": 825
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "USB descriptor/platform decoding and public transport behavior: linux root hub.",
+      "owner": "nusb",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_dell_webcam",
+        "path": "src/descriptors.rs",
+        "line": 878
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "USB descriptor/platform decoding and public transport behavior: dell webcam.",
+      "owner": "nusb",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "assert_send_sync",
+        "path": "src/device.rs",
+        "line": 917
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "USB descriptor/platform decoding and public transport behavior: send sync.",
+      "owner": "nusb",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "rustdoc example at line 36",
+        "path": "src/device.rs",
+        "line": 36
+      },
+      "kind": "rustdoc",
+      "decision": "keep",
+      "contract": "Published Rust API usage remains compatible with the documented example.",
+      "owner": "nusb",
+      "layer": "public API compile/example",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "no_run"
+    },
+    {
+      "source": {
+        "name": "rustdoc example at line 302",
+        "path": "src/device.rs",
+        "line": 302
+      },
+      "kind": "rustdoc",
+      "decision": "keep",
+      "contract": "Published Rust API usage remains compatible with the documented example.",
+      "owner": "nusb",
+      "layer": "public API compile/example",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "no_run"
+    },
+    {
+      "source": {
+        "name": "rustdoc example at line 345",
+        "path": "src/device.rs",
+        "line": 345
+      },
+      "kind": "rustdoc",
+      "decision": "keep",
+      "contract": "Published Rust API usage remains compatible with the documented example.",
+      "owner": "nusb",
+      "layer": "public API compile/example",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "no_run"
+    },
+    {
+      "source": {
+        "name": "rustdoc example at line 429",
+        "path": "src/device.rs",
+        "line": 429
+      },
+      "kind": "rustdoc",
+      "decision": "keep",
+      "contract": "Published Rust API usage remains compatible with the documented example.",
+      "owner": "nusb",
+      "layer": "public API compile/example",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "no_run"
+    },
+    {
+      "source": {
+        "name": "rustdoc example at line 468",
+        "path": "src/device.rs",
+        "line": 468
+      },
+      "kind": "rustdoc",
+      "decision": "keep",
+      "contract": "Published Rust API usage remains compatible with the documented example.",
+      "owner": "nusb",
+      "layer": "public API compile/example",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "no_run"
+    },
+    {
+      "source": {
+        "name": "rustdoc example at line 611",
+        "path": "src/device.rs",
+        "line": 611
+      },
+      "kind": "rustdoc",
+      "decision": "keep",
+      "contract": "Published Rust API usage remains compatible with the documented example.",
+      "owner": "nusb",
+      "layer": "public API compile/example",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "no_run"
+    },
+    {
+      "source": {
+        "name": "rustdoc example at line 637",
+        "path": "src/device.rs",
+        "line": 637
+      },
+      "kind": "rustdoc",
+      "decision": "keep",
+      "contract": "Published Rust API usage remains compatible with the documented example.",
+      "owner": "nusb",
+      "layer": "public API compile/example",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "no_run"
+    },
+    {
+      "source": {
+        "name": "rustdoc example at line 662",
+        "path": "src/device.rs",
+        "line": 662
+      },
+      "kind": "rustdoc",
+      "decision": "keep",
+      "contract": "Published Rust API usage remains compatible with the documented example.",
+      "owner": "nusb",
+      "layer": "public API compile/example",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "no_run"
+    },
+    {
+      "source": {
+        "name": "rustdoc example at line 783",
+        "path": "src/enumeration.rs",
+        "line": 783
+      },
+      "kind": "rustdoc",
+      "decision": "keep",
+      "contract": "Published Rust API usage remains compatible with the documented example.",
+      "owner": "nusb",
+      "layer": "public API compile/example",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "no_run"
+    },
+    {
+      "source": {
+        "name": "assert_send_sync",
+        "path": "src/hotplug.rs",
+        "line": 39
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "USB descriptor/platform decoding and public transport behavior: send sync.",
+      "owner": "nusb",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "rustdoc example at line 11",
+        "path": "src/io/mod.rs",
+        "line": 11
+      },
+      "kind": "rustdoc",
+      "decision": "keep",
+      "contract": "Published Rust API usage remains compatible with the documented example.",
+      "owner": "nusb",
+      "layer": "public API compile/example",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "no_run"
+    },
+    {
+      "source": {
+        "name": "rustdoc example at line 27",
+        "path": "src/lib.rs",
+        "line": 27
+      },
+      "kind": "rustdoc",
+      "decision": "keep",
+      "contract": "Published Rust API usage remains compatible with the documented example.",
+      "owner": "nusb",
+      "layer": "public API compile/example",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "no_run"
+    },
+    {
+      "source": {
+        "name": "rustdoc example at line 167",
+        "path": "src/lib.rs",
+        "line": 167
+      },
+      "kind": "rustdoc",
+      "decision": "keep",
+      "contract": "Published Rust API usage remains compatible with the documented example.",
+      "owner": "nusb",
+      "layer": "public API compile/example",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "no_run"
+    },
+    {
+      "source": {
+        "name": "rustdoc example at line 263",
+        "path": "src/lib.rs",
+        "line": 263
+      },
+      "kind": "rustdoc",
+      "decision": "keep",
+      "contract": "Published Rust API usage remains compatible with the documented example.",
+      "owner": "nusb",
+      "layer": "public API compile/example",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "no_run"
+    },
+    {
+      "source": {
+        "name": "rustdoc example at line 285",
+        "path": "src/lib.rs",
+        "line": 285
+      },
+      "kind": "rustdoc",
+      "decision": "keep",
+      "contract": "Published Rust API usage remains compatible with the documented example.",
+      "owner": "nusb",
+      "layer": "public API compile/example",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "no_run"
+    },
+    {
+      "source": {
+        "name": "rustdoc example at line 334",
+        "path": "src/lib.rs",
+        "line": 334
+      },
+      "kind": "rustdoc",
+      "decision": "keep",
+      "contract": "Published Rust API usage remains compatible with the documented example.",
+      "owner": "nusb",
+      "layer": "public API compile/example",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "no_run"
+    },
+    {
+      "source": {
+        "name": "rustdoc example at line 368",
+        "path": "src/lib.rs",
+        "line": 368
+      },
+      "kind": "rustdoc",
+      "decision": "keep",
+      "contract": "Published Rust API usage remains compatible with the documented example.",
+      "owner": "nusb",
+      "layer": "public API compile/example",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "no_run"
+    },
+    {
+      "source": {
+        "name": "test_parse_location_id",
+        "path": "src/platform/macos_iokit/enumeration.rs",
+        "line": 308
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "USB descriptor/platform decoding and public transport behavior: parse location id.",
+      "owner": "nusb",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "preserves_error_dom_exception_and_string_rejections",
+        "path": "src/platform/webusb/mod.rs",
+        "line": 121
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "USB descriptor/platform decoding and public transport behavior: preserves error dom exception and string rejections.",
+      "owner": "nusb",
+      "layer": "WASM browser unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "fork-added",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "unusual_rejections_do_not_panic_or_erase_available_fields",
+        "path": "src/platform/webusb/mod.rs",
+        "line": 148
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "USB descriptor/platform decoding and public transport behavior: unusual rejections do not panic or erase available fields.",
+      "owner": "nusb",
+      "layer": "WASM browser unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "fork-added",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_parse_hardware_id",
+        "path": "src/platform/windows_winusb/enumeration.rs",
+        "line": 326
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "USB descriptor/platform decoding and public transport behavior: parse hardware id.",
+      "owner": "nusb",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_parse_location_path",
+        "path": "src/platform/windows_winusb/enumeration.rs",
+        "line": 358
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "USB descriptor/platform decoding and public transport behavior: parse location path.",
+      "owner": "nusb",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "descriptor fuzz target",
+        "path": "fuzz/fuzz_targets/descriptors.rs",
+        "line": 1
+      },
+      "kind": "fuzz target",
+      "decision": "keep",
+      "contract": "Arbitrary descriptor bytes cannot panic or violate memory safety.",
+      "owner": "nusb",
+      "layer": "parser fuzz",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "opt-in cargo fuzz"
+    }
+  ],
+  "totals": {
+    "test": 16,
+    "rustdoc": 16,
+    "fuzz target": 1
+  },
+  "decisions": {
+    "keep": 33
+  }
+}
